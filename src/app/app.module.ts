@@ -6,13 +6,11 @@ import {RouterModule} from "@angular/router";
 
 import {AppComponent} from "./app.component";
 import {HomepageComponent} from "./homepage/homepage.component";
-import {DirectoryComponent} from "./directory/directory.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
-    DirectoryComponent
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
@@ -22,10 +20,6 @@ import {DirectoryComponent} from "./directory/directory.component";
       {
         path: 'home',
         component: HomepageComponent
-      },
-      {
-        path: 'directory',
-        component: DirectoryComponent
       }
     ])
   ],
